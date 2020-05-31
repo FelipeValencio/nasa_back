@@ -53,6 +53,7 @@ async function getCSV() {
     }
 }
 
+//método para criar array de objeto tableList
 function formatData(data) {
 
    try{
