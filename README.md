@@ -1,4 +1,4 @@
-# nasa_back
+# NASA SPACE APPS BackEnd
 BackEnd made during the NASA Space Apps Hackathon 2020 to process mobility and socialeconomical data.
 
 Technologies used: NodeJS, JavaScript.
