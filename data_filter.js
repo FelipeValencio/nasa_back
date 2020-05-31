@@ -62,50 +62,113 @@ function formatData(data) {
         {
             country: "CA",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "FR",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "DE",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "IT",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "JP",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "GB",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
         {
             country: "US",
             confirmed: [],
+            confirmedChange: [],
             deaths: [],
+            deathsChange: [],
             recovered: [],
+            recoveredChange: [],
+            retail: [],
+            grocery: [],
+            parks: [],
+            station: [],
+            workplaces: [],
+            residential: [],
             dates: []
         },
     ];
@@ -117,8 +180,29 @@ function formatData(data) {
             if(data[j].Initials === tableList[i].country){
 
                 tableList[i].confirmed.push(data[j].Confirmed)
+
+                tableList[i].confirmedChange.push(data[j].ConfirmedChange)
+
                 tableList[i].deaths.push(data[j].Deaths)
+
+                tableList[i].deathsChange.push(data[j].DeathsChange)
+
                 tableList[i].recovered.push(data[j].Recovered)
+
+                tableList[i].recoveredChange.push(data[j].RecoveredChange)
+
+                tableList[i].retail.push(data[j].retail_and_recreation)
+
+                tableList[i].grocery.push(data[j].grocery_and_pharmacy)
+
+                tableList[i].parks.push(data[j].parks)
+
+                tableList[i].station.push(data[j].transit_stations)
+
+                tableList[i].workplaces.push(data[j].workplaces)
+
+                tableList[i].residential.push(data[j].residential)
+
                 tableList[i].dates.push(data[j].Date)
 
                 if(data[j + 1] != undefined && data[j + 1].Initials !== tableList[i].country) break;
